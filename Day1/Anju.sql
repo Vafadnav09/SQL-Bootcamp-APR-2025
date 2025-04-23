@@ -5,7 +5,7 @@
 -- Dumped from database version 17.4
 -- Dumped by pg_dump version 17.4
 
--- Started on 2025-04-23 11:40:23
+-- Started on 2025-04-23 11:51:22
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -141,8 +141,8 @@ CREATE TABLE public.products (
     "productName" text,
     "quantityPerUnit" text,
     "unitPrice" numeric(10,2),
-    discontinued integer,
-    "categoryID" integer
+    "categoryID" integer,
+    discontinued boolean
 );
 
 
@@ -295,7 +295,7 @@ ALTER TABLE ONLY public."Orders"
     ADD CONSTRAINT "shipperID" FOREIGN KEY ("shipperID") REFERENCES public.shippers("shipperID") NOT VALID;
 
 
--- Completed on 2025-04-23 11:40:23
+-- Completed on 2025-04-23 11:51:22
 
 --
 -- PostgreSQL database dump complete
