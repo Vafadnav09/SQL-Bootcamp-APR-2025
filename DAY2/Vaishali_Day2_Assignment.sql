@@ -202,4 +202,4 @@ Import database:
   You will see total 14 tables loaded
   Databases → your database → Schemas → public → Tables
 
-
+Done
