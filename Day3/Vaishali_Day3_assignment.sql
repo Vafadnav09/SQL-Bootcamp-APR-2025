@@ -194,11 +194,3 @@ WHEN NOT MATCHED AND u.discontinued = 'false' THEN
 INSERT (productId, productname, quantityPerUnit, unitPrice, discontinued, categoryid)
 VALUES (u.productId, u.productname, u.quantityPerUnit, u.unitPrice, u.discontinued, u.categoryid);
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-7)List all orders with employee full names. (Inner join)
-
-SELECT order_id, first_name||''||last_name AS fullname FROM orders
-INNER JOIN employees 
-ON orders.employee_id=employees.employee_id
-
-Select * FROM orders
-Select * FROM employees
